@@ -19,6 +19,6 @@ elif coord1.lower() == 'b':
 elif coord1.lower() == "c":
     coord1 = 2
 
-map[coord1][coord2 - 1] = "X"
+map[coord2-1][coord1] = "X"
 
 print(f"{map[0]}\n{map[1]}\n{map[2]}")
