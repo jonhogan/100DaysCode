@@ -63,8 +63,9 @@ elif computer == 2:
 elif computer == 3:
     print("Computer picked Scissors!")
     scissors()
-
-if player == computer:
+if player > 3 or player <= 0:
+    print("You entered an invalid selection, Computer wins.")
+elif player == computer:
     print("It is a draw!")
 elif player == 1 or computer == 1:
     if player == 2:
