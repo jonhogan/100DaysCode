@@ -72,7 +72,7 @@ def hanged_man(count):
         print(' ___|_')
         print('/     \\')
 
-    elif count == 6:
+    else:
         print(' ____ ')
         print(' |  | ')
         print(' O  | ')
@@ -129,5 +129,7 @@ while play:
 
     replay = input("Game over. would you like to replay? (y/n)\n").lower()
 
-    if replay in ("no", "n"):
+    if replay in ("yes", "y"):
+        continue
+    else:
         play = False
